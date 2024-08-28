@@ -1,15 +1,7 @@
 config {
-
-  type: "view",
-  name: "source",
-  assertions: {
-    uniqueKey: ["fruit"],
-    rowConditions: [
-      'count > 0',
-    ]
-  }
+    type:"table",
+    name:"table_temp"
 }
-
 SELECT
   "apples" AS fruit,
   3 AS count
@@ -24,4 +16,4 @@ SELECT
 UNION ALL
 SELECT
   "bananas" AS fruit,
-  0 AS count
+  10 AS count

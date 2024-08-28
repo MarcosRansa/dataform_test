@@ -1,0 +1,7 @@
+config {
+    type:"view",
+    name:"tableSchema",
+    materialized: true,
+    dependencies: ["table_temp"]
+}
+SELECT CAST(fruit AS STRING) AS fruit,CAST(count AS INTEGER) AS count FROM `pruebas-428913.dataform.table_temp`
