@@ -1,0 +1,7 @@
+config {
+    type:"view",
+    name:"tableSchema",
+    materialized: true,
+    dependencies: ["table_temp"]
+}
+SELECT CAST(id AS STRING) AS id FROM `pruebas-428913.TABLAS_TEST.teable_test`
